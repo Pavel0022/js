@@ -2,9 +2,14 @@
 :root{
     --primary-color:white;
     --second-color:gray;
-
+    --font-color:rgb(83, 80, 80);
 }
 
 body{
     background: var(--primary-color);
+    color: var(--font-color);
+}
+
+h1{
+    color: var(--font-color);
 }

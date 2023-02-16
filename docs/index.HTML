@@ -6,6 +6,7 @@
     <title>Страница авторизации</title>>
 
     <link rel="stylesheet" href="index.css">
+    <script src="skript.js"></script>
 </head>
 
 <body>
@@ -21,63 +22,10 @@
     <div>
         <input type="button" onclick="changeTheme('light')" value="Тема 1">
         <input type="button" onclick="changeTheme('dark')" value="Тема 2">
+        <input type="button" onclick="changeTheme('blue')" value="Тема 3">
+        <input type="button" onclick="changeTheme('red')" value="Тема 4">
     </div>
 </body>
-<script>
 
-    function login() {
-
-        elem = document.getElementById('admin');
-
-        username = elem.value;
-
-        elem = document.getElementById('password');
-
-        password = elem.value;
-
-
-        if (username == "admin" && password == "12345") {
-
-            alert("Нажмите ОК, чтобы перейти на другую страницу");
-            window.open("ADMIN.html", "_self");
-        }
-        else {
-            alert("Вы Дмитрий Ильич")
-        }
-    }
-    if (username == "user" && password == "00000") {
-
-        alert("Нажмите ОК, чтобы перейти на другую страницу");
-        window.open("user.html", "_self");
-    }
-    else
-        alert("Вы Дмитрий Ильич")
-
-
-
-</script>
-<script>
-    function changeTheme(themeName) {
-
-        // Обьявление переменных, которые будут хранить значение цвета var primaryColor;
-
-        var primarycolor;
-        var secondaryColor;
-
-        if (themeName == 'light') {
-            primarycolor = "white";
-            secondaryColor = "gray";
-        }
-
-        if (themeName == 'dark') {
-            primarycolor = "#303030";
-            secondaryColor = "#eee";
-        }
-
-        document.documentElement.style.setProperty("--primary-color", primarycolor);
-        document.documentElement.style.setProperty("--secondary-color", secondarycolor);
-    };
-
-</script>
 
 </html>
